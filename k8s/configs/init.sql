@@ -5,7 +5,6 @@ GRANT ALL ON krampoline.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 
 USE `krampoline`;
-
 DROP TABLE IF EXISTS `marker`;
 DROP TABLE IF EXISTS `day_weather`;
 DROP TABLE IF EXISTS `short_weather`;
@@ -93,7 +92,19 @@ VALUES
 ('PHOTO_SHOOTING', 33.502570, 126.942960, 1, '서빈백사 해수욕장'),
 ('PHOTO_SHOOTING', 33.452055, 126.924562, 1, '광치기해변'),
 ('PHOTO_SHOOTING', 33.424758, 126.931019, 1, '섭지코지'),
-('PHOTO_SHOOTING', 33.519139, 126.900271, 1, '하도 해수욕장');
+('PHOTO_SHOOTING', 33.519139, 126.900271, 1, '하도 해수욕장'),
+
+('SURFING', 33.245, 126.409, 1, '중문해변'),
+('SURFING', 33.555, 126.796, 1, '월정리해변'),
+('SUNRISE_SUNSET_VIEWING', 33.251, 126.622, 1, '쇠소깍해변'),
+('SUNRISE_SUNSET_VIEWING', 33.525, 126.586, 1, '삼양검은모래해변'),
+
+('SWIMMING', 33.543, 126.669, 1, '함덕해변'),
+('SWIMMING', 33.394, 126.239, 1, '협재해변'),
+
+('SCUBA_DIVING', 33.451, 126.304, '곽지해변'),
+('SCUBA_DIVING', 33.231, 126.310, '사계해변'),
+('SCUBA_DIVING', 33.327, 126.837, '표선해변');
 
 # day_weather
 INSERT INTO day_weather (high_tide_1, high_tide_2, low_tide_1, low_tide_2, sun_rise_time, sun_set_time, weather_date,
@@ -168,6 +179,7 @@ VALUES
 (90, 16.5, 1, 8000, 2, '2024-11-01', '22:00:00', 1),
 (90, 16.0, 1, 8000, 2, '2024-11-01', '23:00:00', 1),
 
+-- 2024-11-02 (태풍의 영향으로 날씨가 악화되는 상황 가정)
 (70, 16.5, 2, 10000, 1.5, '2024-11-02', '00:00:00', 1),
 (75, 16.3, 2, 9500, 1.5, '2024-11-02', '01:00:00', 1),
 (80, 16.0, 1, 9000, 1.5, '2024-11-02', '02:00:00', 1),
