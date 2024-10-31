@@ -1,10 +1,10 @@
-CREATE SCHEMA IF NOT EXISTS `krampoline` DEFAULT CHARACTER SET utf8mb4;
+CREATE SCHEMA IF NOT EXISTS `badaon` DEFAULT CHARACTER SET utf8mb4;
 
 GRANT ALL ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
-GRANT ALL ON krampoline.* TO 'root'@'localhost';
+GRANT ALL ON badaon.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 
-USE `krampoline`;
+USE `badaon`;
 
 DROP TABLE IF EXISTS `sample_data`;
 CREATE TABLE `sample_data` (

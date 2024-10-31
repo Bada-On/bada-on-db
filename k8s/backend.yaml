@@ -15,12 +15,12 @@ spec:
       containers:
         - name: backend
           # 여러분의 backend image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_b4642dd9c80a
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_c3a3b8be6ea8
           env:
             - name: TZ
               value: Asia/Seoul
             - name: DATABASE_URL
-              value: jdbc:mariadb://mariadb:3306/krampoline
+              value: jdbc:mariadb://mariadb:3306/Badaon
           resources:
             requests:
               memory: 1Gi
