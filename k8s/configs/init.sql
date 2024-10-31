@@ -102,9 +102,9 @@ VALUES
 ('SWIMMING', 33.543, 126.669, 1, '함덕해변'),
 ('SWIMMING', 33.394, 126.239, 1, '협재해변'),
 
-('SCUBA_DIVING', 33.451, 126.304, '곽지해변'),
-('SCUBA_DIVING', 33.231, 126.310, '사계해변'),
-('SCUBA_DIVING', 33.327, 126.837, '표선해변');
+('SCUBA_DIVING', 33.451, 126.304, 1, '곽지해변'),
+('SCUBA_DIVING', 33.231, 126.310, 1, '사계해변'),
+('SCUBA_DIVING', 33.327, 126.837, 1, '표선해변');
 
 # day_weather
 INSERT INTO day_weather (high_tide_1, high_tide_2, low_tide_1, low_tide_2, sun_rise_time, sun_set_time, weather_date,
