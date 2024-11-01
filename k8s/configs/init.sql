@@ -2,6 +2,9 @@ CREATE SCHEMA IF NOT EXISTS `krampoline` DEFAULT CHARACTER SET utf8mb4;
 
 GRANT ALL ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
 GRANT ALL ON krampoline.* TO 'root'@'localhost';
+GRANT ALL PRIVILEGES ON krampoline.* TO 'root'@'%';
+FLUSH PRIVILEGES;
+
 FLUSH PRIVILEGES;
 
 USE `krampoline`;
