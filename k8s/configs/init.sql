@@ -1,10 +1,12 @@
 CREATE SCHEMA IF NOT EXISTS `krampoline` DEFAULT CHARACTER SET utf8mb4;
 
-GRANT ALL ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
-GRANT ALL ON krampoline.* TO 'root'@'localhost';
-GRANT ALL PRIVILEGES ON krampoline.* TO 'root'@'%';
-FLUSH PRIVILEGES;
+-- root 사용자에게 모든 호스트에서의 접근 권한 부여
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
 
+-- krampoline 데이터베이스에 대한 특정 권한 부여 (필요한 경우)
+GRANT ALL PRIVILEGES ON krampoline.* TO 'root'@'%';
+
+-- 변경사항 적용
 FLUSH PRIVILEGES;
 
 USE `krampoline`;
